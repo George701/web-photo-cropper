@@ -60,7 +60,7 @@ export const SimpleCamera = () => {
       videoRef.current.srcObject = streamRef.current;
       videoRef.current.play().catch(() => {});
     }
-  }, [cameraOpen]);
+  }, [cameraOpen, facingMode]);
 
   useEffect(() => () => stopCamera(), [stopCamera]);
 
