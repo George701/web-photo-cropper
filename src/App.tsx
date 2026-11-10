@@ -7,24 +7,17 @@ import { SimpleCamera } from './SimpleCamera'
 function App() {
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Camera Workshop Demo</h1>
-        </div>
-        <SimpleCamera />
-      </section>
-
-      <div className="ticks"></div>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+    <section id="center">
+      <div className="hero">
+        <img src={heroImg} className="base" width="170" height="179" alt="" />
+        <img src={reactLogo} className="framework" alt="React logo" />
+        <img src={viteLogo} className="vite" alt="Vite logo" />
+      </div>
+      <div>
+        <h1>Camera Workshop Demo</h1>
+      </div>
+      <SimpleCamera />
+    </section>
   )
 }
 
